@@ -48,7 +48,7 @@ mail.host: 'smtp'
 # This is the main URL prefix where Sentry can be accessed.
 # Sentry will use this to create links to its different parts of the web UI.
 # This is most helpful if you are using an external reverse proxy.
-# system.url-prefix: https://example.sentry.com
+system.url-prefix: https://sentry.42porto.com
 
 # Most of the time, this should NOT be changed. It's used for communication
 # between containers. `web` is the container's name, and `9000` is the
@@ -108,6 +108,7 @@ filestore.profiles-options:
   addressing_style: "path"
   signature_version: "s3v4"
 
+# The URL prefix in which Sentry is accessible
 symbolicator.enabled: true
 symbolicator.options:
   url: "http://symbolicator:3021"
@@ -119,13 +120,17 @@ transaction-events.force-disable-internal-project: true
 ######################
 
 # Refer to https://develop.sentry.dev/integrations/github/ for setup instructions.
-
-# github-login.extended-permissions: ['repo']
+# # App ID
 # github-app.id: GITHUB_APP_ID
+# # App Name
 # github-app.name: 'GITHUB_APP_NAME'
+# # Webhook Secret
 # github-app.webhook-secret: 'GITHUB_WEBHOOK_SECRET' # Use only if configured in GitHub
+# # Client ID
 # github-app.client-id: 'GITHUB_CLIENT_ID'
+# # Client Secret
 # github-app.client-secret: 'GITHUB_CLIENT_SECRET'
+# # Private key
 # github-app.private-key: |
 #   -----BEGIN RSA PRIVATE KEY-----
 #   privatekeyprivatekeyprivatekeyprivatekey
@@ -134,6 +139,10 @@ transaction-events.force-disable-internal-project: true
 #   privatekeyprivatekeyprivatekeyprivatekey
 #   privatekeyprivatekeyprivatekeyprivatekey
 #   -----END RSA PRIVATE KEY-----
+
+# # Only needed if you have multiple organizations enabled
+# github-login.client-id: 'GITHUB_LOGIN_CLIENT_ID'
+# github-login.client-secret: 'GITHUB_LOGIN_CLIENT_SECRET'
 
 #####################
 # Slack Integration #
