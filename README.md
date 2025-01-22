@@ -4,6 +4,8 @@
 
 Documentation [here](https://develop.sentry.dev/self-hosted/).
 
+Documentation [here](https://develop.sentry.dev/self-hosted/).
+
 
 ## 42 Portugal Fork
 

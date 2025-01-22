@@ -10,7 +10,6 @@ if [[ -z "${SKIP_SENTRY_MIGRATIONS:-}" ]]; then
     echo "Postgres image debian check failed, exiting..."
     exit 1
   fi
-
   if [[ -n "${CI:-}" || "${SKIP_USER_CREATION:-0}" == 1 ]]; then
     $dcr web upgrade --noinput --create-kafka-topics
     echo ""

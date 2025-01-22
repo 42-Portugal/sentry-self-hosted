@@ -91,7 +91,6 @@ runs:
       shell: bash
       run: |
         cd ${{ github.action_path }}
-
         echo "PY_COLORS=1" >> "$GITHUB_ENV"
         ### pytest-sentry configuration ###
         if [ "$GITHUB_REPOSITORY" = "getsentry/self-hosted" ]; then

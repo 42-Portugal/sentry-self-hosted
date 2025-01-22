@@ -523,6 +523,14 @@ JS_SDK_LOADER_DEFAULT_SDK_URL = "https://browser.sentry-cdn.com/%s/bundle%s.min.
 
 # SENTRY_OPTIONS["relay.span-normalization.allowed_hosts"] = ["example.com", "192.168.10.1"]
 
+# Since version 24.3.0, Insights features are available on self-hosted. For Requests module,
+# there are scrubbing logic done on Relay to prevent high cardinality of stored HTTP hosts.
+# However in self-hosted scenario, the amount of stored HTTP hosts might be consistent,
+# and you may have allow list of hosts that you want to keep. Uncomment the following line
+# to allow specific hosts. It might be IP addresses or domain names (without `http://` or `https://`).
+
+# SENTRY_OPTIONS["relay.span-normalization.allowed_hosts"] = ["example.com", "192.168.10.1"]
+
 ##############
 # Monitoring #
 ##############
