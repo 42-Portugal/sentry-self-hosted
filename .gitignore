@@ -1,3 +1,7 @@
+# BACKUP CONFIG FILES
+docker-compose.backup
+.env.backup
+
 # Error reporting choice cache
 .reporterrors
 
@@ -105,3 +109,4 @@ sentry/test-custom-ca-roots.py
 
 # OSX minutia
 .DS_Store
+
