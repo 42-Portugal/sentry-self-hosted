@@ -34,7 +34,7 @@ Any other contributions beyond those listed above are welcome!
 
 To get started, install these tools:
 1. Docker Engine and Docker Compose (via Docker plugin system). Refer to [Docker Engine installation documentation](https://docs.docker.com/engine/install/). It's recommended to install via the distribution's package manager (`apt` for Debian/Ubuntu, and `dnf` or `yum` for CentOS/Fedora/RHEL).
-2. Python v3.10 or higher.
+2. Python v3.11 or higher.
 3. the `uv` package manager. Refer to [their installation documentation](https://docs.astral.sh/uv/getting-started/installation/).
 4. `prek` for Git pre-commit hooks. Refer to [their installation documentation](https://prek.j178.dev/installation/).
 
@@ -83,6 +83,12 @@ Expectations:
 - Keep commit history readable. A small number of focused commits is better than a long stream of fixups.
 
 If you open an issue or PR, include enough context that someone unfamiliar with your machine can reproduce it: host OS, Docker and Compose versions, whether you used `.env.custom`, relevant `COMPOSE_PROFILES`, and the failing command or log excerpt.
+
+### AI-assisted pull requests
+
+**You must understand your pull request.** If you cannot explain what your changes do and how they interact with the rest of the system, your PR may be closed.
+
+Using AI to open pull requests is fine. Submitting AI-generated slop without understanding it is not.
 
 ## Cutting Monthly Release
 
